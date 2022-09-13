@@ -17,11 +17,10 @@
     }
 )
 
-;; (define-public (get-employee-2nd-club-name-from-tuple)
-;;     ;; IMPLEMENT
-;; )
+(define-public (get-employee-2nd-club-name-from-tuple)
+    (ok (unwrap-panic (get name (element-at (get clubs (get employee TUPLE_INPUT)) u1))))   
+)
 
-
-;; (define-public (set-new-language-for-employee-in-tuple)
-;;     ;; IMPLEMENT
-;; )
+(define-public (set-new-language-in-tuple) 
+    (ok (merge (get employee TUPLE_INPUT) {language: "PythonBuidl"}))
+)
